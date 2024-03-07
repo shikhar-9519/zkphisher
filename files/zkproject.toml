@@ -6,14 +6,14 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [tool.poetry]
-name = "PyPhisher"
+name = "zkPhisher"
 version = "2.1.7"
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/KasRoudra/PyPhisher/"
+repository = "https://github.com/Ydv95843/zkphisher/"
 include = ["README.md", "LICENSE", "files/email.json"]
 description = "Ultimate phishing tool in python with dual tunneling, 77 templates and many more!"
-authors = ["KasRoudra <kasroudrakrd@gmail.com>"]
+authors = ["ydvgaurav810@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -22,7 +22,7 @@ rich = "^13.0.0"
 beautifulsoup4 = "^4.12"
 
 [tool.poetry.scripts]
-pyphisher = "pyphisher:main"
+zkphisher = "zkphisher:main"
 
 [build-system.sdist]
 formats = ["gztar"]
