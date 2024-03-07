@@ -44,7 +44,7 @@ v1.8:
 
 v1.7:
 
-1. Added arguments. Type 'python3 pyphisher.py -h' to check out
+1. Added arguments. Type 'python3 zkphisher.py -h' to check out
 2. Fixed Insta Blue verify text and image issue
 3. Made the mask sentence customizable from json
 
@@ -95,4 +95,4 @@ v1.1:
 
 v1.0:
 
-1. Initial Publish on 8 August, 2021 with 51 templates
+1. Initial Publish on 07-03-2024 with 51 templates
