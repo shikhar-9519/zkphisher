@@ -78,7 +78,7 @@ BSD        | Never tested
 #### Options
 
 ```
-usage: pyphisher.py [-h] [-p PORT] [-o OPTION] [-t TUNNELER]
+usage: zkphisher.py [-h] [-p PORT] [-o OPTION] [-t TUNNELER]
                     [-r REGION] [-s SUBDOMAIN] [-u URL] [-m MODE]
                     [-e TROUBLESHOOT] [--nokey] [--noupdate]
 
